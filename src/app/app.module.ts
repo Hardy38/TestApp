@@ -2,19 +2,26 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {AppareilService} from './services/appareil.service';
-import {AppareilComponent} from './composants/appareil/appareil.component';
+import {RouterModule, Routes} from '@angular/router';
+
+/*
+
+const appRoutes: Routes = [
+    { path: 'appareils', component: AppareilViewComponent },
+    { path: 'auth', component: AuthComponent },
+    { path: '', component: AppareilViewComponent }
+];
+*/
 
 @NgModule({
     declarations: [
         AppComponent,
-        AppareilComponent,
-        AppareilComponent
     ],
     imports: [
-        BrowserModule
+        BrowserModule,
+        // RouterModule.forRoot(appRoutes)
     ],
-    providers: [AppareilService],
+    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule {

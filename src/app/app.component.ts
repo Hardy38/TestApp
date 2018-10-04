@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {AppareilService} from './services/appareil.service';
 
 @Component({
     selector: 'app-root',
@@ -8,22 +7,10 @@ import {AppareilService} from './services/appareil.service';
 })
 export class AppComponent implements OnInit {
 
-    title = 'testApp';
-
-    isAuth = false;
-
-    appareils: any[];
-
-    constructor(private appareilService: AppareilService) {
-        setTimeout(
-            () => {
-                this.isAuth = true;
-            }, 4000
-        );
+    constructor() {
     }
 
     ngOnInit() {
-        this.appareils = this.appareilService.appareils;
     }
 
 }
