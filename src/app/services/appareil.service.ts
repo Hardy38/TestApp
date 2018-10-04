@@ -4,6 +4,31 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AppareilService {
-
+    appareils = [
+        {
+            name: 'Machine à laver',
+            status: 'éteint'
+        },
+        {
+            name: 'Frigo',
+            status: 'allumé'
+        },
+        {
+            name: 'Ordinateur',
+            status: 'éteint'
+        }
+    ];
   constructor() { }
+
+    switchOnAll() {
+        for (const appareil of this.appareils) {
+            appareil.status = 'allumé';
+        }
+    }
+
+    switchOffAll() {
+        for (const appareil of this.appareils) {
+            appareil.status = 'éteint';
+        }
+    }
 }
