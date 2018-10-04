@@ -10,6 +10,16 @@ class Company {
     origin_country: string;
 }
 
+class Country {
+    iso_3166_1: string;
+    name: string;
+}
+
+class SLanguage {
+    iso_639_1: string;
+    name: string;
+}
+
 export class Film {
     adult: boolean;
     backdrop_path: string;
@@ -25,13 +35,17 @@ export class Film {
     popularity: number;
     poster_path: string;
     production_companies: Company[];
-
-
-    release_date: string;
+    production_countrie: Country[];
+    release_date: string; // format: date
+    revenue: number;
+    runtime: number;
+    spoken_languages: SLanguage[];
+    status: string; // allows values: Rumored, Planned, In Production, Post Production, Released, Canceled
+    tagline: string;
     title: string;
-    vote_count: number;
     video: boolean;
     vote_average: number;
+    vote_count: number;
 }
 
 
@@ -42,5 +56,19 @@ export class Acteur {
     id: number;
     name: string;
     also_known_as: string;
-    gender: number; //
+    gender: number; // nim: 0 max: 2 default: 0
+    biography: string;
+    popularity: number;
+    place_of_birth: string;
+    profile_path: string;
+    adult: boolean;
+    imdb_id: string;
+    homepage: string;
+}
+
+export class Tendance {
+    page: number;
+    Films: Film[];
+    total_pages: number;
+    total_results: number;
 }
