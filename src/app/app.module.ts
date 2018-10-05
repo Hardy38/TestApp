@@ -3,7 +3,8 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {RouterModule, Routes} from '@angular/router';
-
+import {FilmService} from './services/film.service';
+import { HttpClientModule } from '@angular/common/http';
 /*
 
 const appRoutes: Routes = [
@@ -19,9 +20,10 @@ const appRoutes: Routes = [
     ],
     imports: [
         BrowserModule,
+        HttpClientModule
         // RouterModule.forRoot(appRoutes)
     ],
-    providers: [],
+    providers: [FilmService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
