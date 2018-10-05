@@ -1,0 +1,35 @@
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.menu-horizontal {
+    background: midnightblue;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    color: wheat;
+    width: 100%;
+}
+
+.logo-container {
+    background: aliceblue;
+    height: 55px;
+    width: 96px;
+    margin-right: 7%;
+    text-align: center;
+    line-height: 55px;
+}
+
+.menu-item {
+    cursor: pointer;
+    margin-right: 32px;
+}
+
+.page-container {
+
+}
