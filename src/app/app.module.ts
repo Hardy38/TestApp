@@ -14,6 +14,10 @@ import {MatMenuModule} from '@angular/material/menu';
 import { ResearchComponent } from './composants/research/research.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { ListViewComponent } from './composants/list-view/list-view.component';
+import { ListItemComponent } from './composants/list-item/list-item.component';
+import { FIlmComponent } from './composants/film/film.component';
+import {MatListModule} from '@angular/material/list';
 
 /*
 
@@ -29,6 +33,9 @@ const appRoutes: Routes = [
         AppComponent,
         MainPageComponent,
         ResearchComponent,
+        ListViewComponent,
+        ListItemComponent,
+        FIlmComponent,
     ],
     imports: [
         BrowserModule,
@@ -39,7 +46,8 @@ const appRoutes: Routes = [
         MatCardModule,
         MatMenuModule,
         MatFormFieldModule,
-        MatInputModule
+        MatInputModule,
+        MatListModule
 
         // RouterModule.forRoot(appRoutes)
     ],
