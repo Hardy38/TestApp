@@ -1,16 +1,25 @@
-<mat-toolbar class="menu-horizontal">
-    <div class="logo-container">Logo</div>
-    <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Films</span>
-    <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Acteurs</span>
-    <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Réalisateurs</span>
-</mat-toolbar>
-
-<div class="page-container">
-<app-research></app-research>
+<div class="page-header">
+    <div class="menu-horizontal-container">
+        <mat-toolbar class="menu-horizontal">
+            <div class="logo-container">Logo</div>
+            <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Films</span>
+            <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Acteurs</span>
+            <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Réalisateurs</span>
+        </mat-toolbar>
+    </div>
 </div>
 
+<div class="page-container">
+    <div class="page-content">
+        <app-research></app-research>
+        <div class="page-content-films">
+            <div class="left-panel"></div>
+            <div class="rigth-panel">
+        </div>
 
-
+        </div>
+    </div>
+</div>
 
 
 <mat-menu #menuFilms="matMenu">

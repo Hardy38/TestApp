@@ -6,14 +6,24 @@
     flex: 1 1 auto;
 }
 
+.page-header {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+}
+.menu-horizontal-container {
+    border: 2px solid #a5b1b1;
+    width: 99%;
+    margin: auto;
+    border-bottom: none;
+}
 .menu-horizontal {
-    background: midnightblue;
+    background: white;
     height: 3.5em;
     display: flex;
-    align-items: center;
     padding: 8px 16px;
-    color: wheat;
-    width: 100%;
+    color: black;
 }
 
 .logo-container {
@@ -31,5 +41,37 @@
 }
 
 .page-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 72px;
+}
 
+.page-content {
+    min-height: 546px;
+    margin: auto;
+    border: 2px solid #a5b1b1;
+    width: 99%;
+}
+
+.page-content-films {
+    width: 100%;
+    border: 2px solid #a5b1b1;
+    border-right: none;
+    border-left: none;
+    min-height: 546px;
+}
+.rigth-panel {
+    float: right;
+    width: 70.8%;
+    min-height: 546px;
+    background: azure;
+    border-left: 2px solid #a5b1b1;
+
+}
+
+.left-panel {
+    float: left;
+    width: 29%;
+    height: 200px;
+    background: antiquewhite;
 }
