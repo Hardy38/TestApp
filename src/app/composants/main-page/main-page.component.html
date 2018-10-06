@@ -1,10 +1,17 @@
 <div class="page-header">
     <div class="menu-horizontal-container">
         <mat-toolbar class="menu-horizontal">
-            <div class="logo-container">Logo</div>
-            <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Films</span>
-            <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Acteurs</span>
-            <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Réalisateurs</span>
+            <div class="menu-panel">
+                <span class="logo-container">Logo</span>
+                <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Films</span>
+                <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Acteurs</span>
+                <span class="menu-item" mat-button [matMenuTriggerFor]="menuFilms">Réalisateurs</span>
+            </div>
+
+            <div class="authentification-panel">
+                <span class="auth-menu-item" mat-button>Connection</span>
+                <span class="auth-menu-item" mat-button>Créer un compte</span>
+            </div>
         </mat-toolbar>
     </div>
 </div>
