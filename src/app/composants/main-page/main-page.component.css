@@ -60,24 +60,17 @@
 }
 
 .page-content {
-    min-height: 546px;
+    height: 620px;
     margin: auto;
     border: 2px solid #a5b1b1;
     width: 99%;
 }
 
-.page-content-films {
-    width: 100%;
-    border: 2px solid #a5b1b1;
-    border-right: none;
-    border-left: none;
-    min-height: 546px;
-}
 .rigth-panel {
     float: right;
-    width: 70.8%;
+    width: 69.8%;
     min-height: 546px;
-    background: azure;
+    background: #e4e0e052;
     border-left: 2px solid #a5b1b1;
     padding-top: 31px;
 
