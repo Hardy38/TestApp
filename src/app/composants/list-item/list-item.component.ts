@@ -8,7 +8,7 @@ import {Film} from '../../modeles/myModeles';
 })
 export class ListItemComponent implements OnInit {
 
-  @Input() film: any;
+  @Input() film: Film;
 
   constructor() { }
 

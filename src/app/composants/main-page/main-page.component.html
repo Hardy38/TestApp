@@ -43,9 +43,7 @@
     </div>
 
     <div class="rigth-panel">
-        <app-list-view></app-list-view>
-        film
-        <div *ngFor="let film of films">{{film.name}}</div>
+        <app-list-view [films]="movies"></app-list-view>
     </div>
 </div>
 
