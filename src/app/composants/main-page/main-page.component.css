@@ -52,9 +52,9 @@
 
 .rigth-panel {
     float: right;
-    width: 69.8%;
+    width: 75%;
     background: #e4e0e052;
-    border-left: 2px solid #a5b1b1;
+    border-left: 1px solid #a5b1b1;
     padding-top: 21px;
 
 }
@@ -62,6 +62,33 @@
 .left-panel {
     float: left;
     width: 29%;
-    height: 200px;
-    background: antiquewhite;
+    height: 435px;
+    margin-top: 16px;
+    position: fixed;
+    font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+.left-panel-tite {
+    margin-top: 40px;
+    text-align: left;
+    padding-left: 37px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.left-panel-controls {
+    height: fit-content;
+    margin-top: 5px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.left-panel_controls-item {
+    margin: 0 10px;
+}
+
+.mat-slider {
+    width: 73%;
+}
+.mat-slider-container {
+    width: 86%;
 }

@@ -18,6 +18,9 @@ import { ListViewComponent } from './composants/list-view/list-view.component';
 import { ListItemComponent } from './composants/list-item/list-item.component';
 import { FIlmComponent } from './composants/film/film.component';
 import {MatListModule} from '@angular/material/list';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSliderModule} from '@angular/material/slider';
+
 
 /*
 
@@ -47,7 +50,9 @@ const appRoutes: Routes = [
         MatMenuModule,
         MatFormFieldModule,
         MatInputModule,
-        MatListModule
+        MatListModule,
+        MatCheckboxModule,
+        MatSliderModule
 
         // RouterModule.forRoot(appRoutes)
     ],
