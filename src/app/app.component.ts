@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import {Film} from './modeles/myModeles';
 import {Observable} from 'rxjs';
 import {FilmService} from './services/film.service';
@@ -11,17 +10,25 @@ import {FilmService} from './services/film.service';
 })
 export class AppComponent implements OnInit {
 
-    filmsObservable: Observable<Film[]>;
+    films: any[] = [];
 
     constructor(private _FService: FilmService) {
     }
 
     ngOnInit() {
-        this._FService.getPopularMovies()
+      /*  this._FService.getPopularMovies()
             .subscribe((data) => {
                 console.log(data);
-            });
-        console.log('data');
+            },
+                err => {
+                    console.log('error', err);
+                },
+                () => {
+                    console.log('Completed.');
+                });
+        console.log(this.films);
+*/
+
     }
 
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FilmService} from '../../services/film.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-main-page',
@@ -6,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent implements OnInit {
+    films: any[] = [];
 
-  constructor() { }
+  constructor(private _FService: FilmService) { }
 
   ngOnInit() {
+      this._FService.getPopularMovies()
+          .subscribe((data) => {
+                  console.log(data);
+              },
+              err => {
+                  console.log('error', err);
+              },
+              () => {
+                  console.log('Completed.');
+              });
+      console.log(this.films);
   }
 
     formatLabel(value: number | null) {
