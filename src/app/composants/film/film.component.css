@@ -22,7 +22,7 @@
     font-weight: 600;
 }
 .film-content {
-    height: 41%;
+    height: 49%;
     text-align: left;
     padding-left: 8px;
     margin-left: 11px;
@@ -179,4 +179,13 @@ margin-bottom: 100px;
 }
 #note {
     font-weight: 700;
+}
+
+.retourn-tbn{
+    background: #f9f9fb;
+    width: max-content;
+    height: max-content;
+    border-radius: 3px;
+    border: 1px solid #eae4e4;
+    margin: 5px;
 }

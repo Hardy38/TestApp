@@ -20,6 +20,7 @@ import { FIlmComponent } from './composants/film/film.component';
 import {MatListModule} from '@angular/material/list';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSliderModule} from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
 
 
 /*
@@ -52,7 +53,8 @@ const appRoutes: Routes = [
         MatInputModule,
         MatListModule,
         MatCheckboxModule,
-        MatSliderModule
+        MatSliderModule,
+        MatButtonModule
 
         // RouterModule.forRoot(appRoutes)
     ],
