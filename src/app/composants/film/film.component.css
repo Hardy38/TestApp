@@ -36,6 +36,7 @@
     float: left;
     margin-left: 13px;
 }
+
 .film-content-right {
     width: 12%;
     height: 263px;
@@ -64,11 +65,11 @@ margin-bottom: 100px;
     width: 100%;
     background: #e1e8e8;
     float: right;
-    height: 621px;
+    height: 496px;
 }
 .film-content-bottom-realisateur {
-    height: 40%;
-    padding-top: 10px;
+    height: 50%;
+    padding: 10px;
 }
 .realisateur {
     width: 50%;
@@ -110,7 +111,7 @@ margin-bottom: 100px;
 }
 .film-content-bottom-acteurs {
     background: #cdd4d2;
-    height: 34%;
+    height: 46%;
     padding: 7px;
 }
 
@@ -137,4 +138,45 @@ margin-bottom: 100px;
 }
 .acteur-name {
     font-size: smaller;
+}
+
+/*Trailer*/
+
+.trailer-label {
+    font-size: x-large;
+    font-weight: 600;
+}
+.trailer-container {
+    background: #e4efef;
+    width: 47%;
+    height: 100%;
+    text-align: left;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+/*Genre , Date de sortie, Note*/
+
+.film-content-genre {
+    float: inherit;
+    width: 86%;
+}
+
+#genre {
+    font-weight: 700;
+}
+.genre-label {
+
+}
+.out-date {
+    font-size: small;
+    margin-left: 76px;
+    font-style: italic;
+}
+
+.note-label {
+    margin-left: 95px;
+}
+#note {
+    font-weight: 700;
 }
