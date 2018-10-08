@@ -40,11 +40,18 @@
                     max="100000">
             </mat-slider>
         </div>
+
+        <ul class="nav navbar-nav">
+            <li routerLinkActive="active"><a routerLink="list">List</a></li>
+            <li routerLinkActive="active"><a routerLink="film">film</a></li>
+        </ul>
+
     </div>
 
     <div class="rigth-panel">
+        <router-outlet></router-outlet>
         <!--<app-list-view [films]="movies"></app-list-view>-->
-        <app-film></app-film>
+        <!--<app-film></app-film>-->
     </div>
 </div>
 

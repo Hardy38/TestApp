@@ -23,14 +23,11 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
 
 
-/*
-
 const appRoutes: Routes = [
-    { path: 'appareils', component: AppareilViewComponent },
-    { path: 'auth', component: AuthComponent },
-    { path: '', component: AppareilViewComponent }
+    { path: 'film', component: FIlmComponent },
+    { path: 'list', component: ListViewComponent },
+    { path: '', component: ListViewComponent }
 ];
-*/
 
 @NgModule({
     declarations: [
@@ -54,7 +51,8 @@ const appRoutes: Routes = [
         MatListModule,
         MatCheckboxModule,
         MatSliderModule,
-        MatButtonModule
+        MatButtonModule,
+        RouterModule.forRoot(appRoutes)
 
         // RouterModule.forRoot(appRoutes)
     ],
