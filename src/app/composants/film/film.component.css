@@ -1,0 +1,40 @@
+.film-container {
+    background: white;
+    width: 96%;
+    margin: auto;
+    height: 700px;
+    box-shadow: 1px 1px 1px #d4d0cd;
+    font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+.film-photo-container {
+    width: 30%;
+    height: 41%;
+    float: left;
+}
+.photo {
+    height: inherit;
+    width: inherit;
+}
+
+.item-title {
+    font-size: larger;
+    font-weight: 600;
+}
+.film-content {
+    height: 41%;
+    text-align: left;
+    padding-left: 8px;
+    margin-left: 11px;
+    width: 66%;
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.synopsis {
+    margin-top: 12px;
+}
+.label-value {
+    font-size: large;
+    font-weight: 600;
+}
