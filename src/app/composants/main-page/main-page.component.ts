@@ -2,6 +2,7 @@ import {Component, OnInit, Output} from '@angular/core';
 import {FilmService} from '../../services/film.service';
 import {Observable} from 'rxjs';
 import {Film} from '../../modeles/myModeles';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
     selector: 'app-main-page',
@@ -13,8 +14,9 @@ export class MainPageComponent implements OnInit {
 
     @Output() movies: Film[] = [];
     images: any[] = [];
+    private name: any;
 
-    constructor(private _FService: FilmService) {
+    constructor(private _FService: FilmService, private route: ActivatedRoute, private router: Router) {
     }
 
     ngOnInit() {
@@ -29,17 +31,8 @@ export class MainPageComponent implements OnInit {
             },
             (error) => console.log(error)
         );
-            /*.subscribe((data) => {
-                this.films = data;
-                    console.log('Résultat : ', data);
-                },
-                err => {
-                    console.log('error', err);
-                },
-                () => {
-                    console.log('Completed.');
-                });*/
-        // console.log('Résultat : ', this.films);
+        this.router.navigate(['/mylist', {queryParams: {test: 'Bonjour'}}]).then(nav => console.log('navigation : ', nav));
+           //  this.name = this.route.snapshot.params['id'];
     }
 
     formatLabel(value: number | null) {

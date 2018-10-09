@@ -42,7 +42,7 @@
         </div>
 
         <ul class="nav navbar-nav">
-            <li routerLinkActive="active"><a routerLink="list">List</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/mylist']" [queryParams]="{test: 'Bonjour'}">List</a></li>
             <li routerLinkActive="active"><a routerLink="film">film</a></li>
         </ul>
 

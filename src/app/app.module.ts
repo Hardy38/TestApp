@@ -25,8 +25,8 @@ import {MatButtonModule} from '@angular/material/button';
 
 const appRoutes: Routes = [
     { path: 'film', component: FIlmComponent },
-    { path: 'list', component: ListViewComponent },
-    { path: '', component: ListViewComponent }
+    { path: 'mylist', component: ListViewComponent },
+    // { path: '', component: ListViewComponent }
 ];
 
 @NgModule({
