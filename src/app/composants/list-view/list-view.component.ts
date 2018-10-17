@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Film} from '../../modeles/myModeles';
 import {ActivatedRoute, Router} from '@angular/router';
+import {FilmService} from '../../services/film.service';
 
 @Component({
     selector: 'app-list-view',
@@ -9,21 +10,18 @@ import {ActivatedRoute, Router} from '@angular/router';
 })
 export class ListViewComponent implements OnInit {
 
-    // @Input() films: Film[] = [];
+    @Input() films: Film[] = [];
 
-    films: Film[] = [];
-
-    constructor(private route: ActivatedRoute, private router: Router) {
+    constructor(private _FService: FilmService, private route: ActivatedRoute, private router: Router) {
     }
 
     ngOnInit() {
-        // this.route.snapshot.paramMap.get('test');
-        /*this.route.queryParams.subscribe(params => {
-            console.log('Params', params);
-        });*/
-
-        const t = this.route.snapshot.queryParamMap.get('test');
-        console.log('Test : ', t)
+        this._FService.getPopularMovies()
+            .subscribe((movie: any[]) => {
+                    this.films = movie['results'];
+                },
+                (error) => console.log('Erreur lors du téléchargement : ', error)
+            );
     }
 
 }

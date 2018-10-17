@@ -42,16 +42,13 @@
         </div>
 
         <ul class="nav navbar-nav">
-            <li routerLinkActive="active"><a [routerLink]="['/mylist']" [queryParams]="{test: 'Bonjour'}">List</a></li>
-            <li routerLinkActive="active"><a routerLink="film">film</a></li>
+            <li routerLinkActive="active"><a routerLink="mylist">List</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/film', '888888']">film</a></li>
         </ul>
-
     </div>
 
     <div class="rigth-panel">
         <router-outlet></router-outlet>
-        <!--<app-list-view [films]="movies"></app-list-view>-->
-        <!--<app-film></app-film>-->
     </div>
 </div>
 

@@ -22,11 +22,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
 
-
 const appRoutes: Routes = [
-    { path: 'film', component: FIlmComponent },
+    { path: 'film/:id', component: FIlmComponent },
     { path: 'mylist', component: ListViewComponent },
-    // { path: '', component: ListViewComponent }
+    { path: '', component: ListViewComponent }
 ];
 
 @NgModule({
@@ -52,9 +51,7 @@ const appRoutes: Routes = [
         MatCheckboxModule,
         MatSliderModule,
         MatButtonModule,
-        RouterModule.forRoot(appRoutes)
-
-        // RouterModule.forRoot(appRoutes)
+        RouterModule.forRoot(appRoutes),
     ],
     providers: [FilmService],
     bootstrap: [AppComponent]

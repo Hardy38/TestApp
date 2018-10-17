@@ -8,11 +8,15 @@ import {Film} from '../../modeles/myModeles';
 })
 export class ListItemComponent implements OnInit {
 
-  @Input() film: Film;
+  @Input()film: Film;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect () {
+    console.log('séléctioné : ', this.film.id);
   }
 
 }

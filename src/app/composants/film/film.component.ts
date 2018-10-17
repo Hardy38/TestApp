@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Film} from '../../modeles/myModeles';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-film',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FIlmComponent implements OnInit {
 
-  constructor() { }
+  public currentFilm: Film;
+    private id: any;
+
+  constructor(private _route: ActivatedRoute) { }
 
   ngOnInit() {
+    console.log('Film : ', this._route.snapshot.params['id']);
   }
 
 }

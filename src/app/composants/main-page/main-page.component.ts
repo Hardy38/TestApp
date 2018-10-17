@@ -14,7 +14,8 @@ export class MainPageComponent implements OnInit {
 
     @Output() movies: Film[] = [];
     images: any[] = [];
-    private name: any;
+    click = false;
+    selected = '';
 
     constructor(private _FService: FilmService, private route: ActivatedRoute, private router: Router) {
     }
@@ -23,16 +24,13 @@ export class MainPageComponent implements OnInit {
         this._FService.getPopularMovies()
         .subscribe((movie: any[]) => {
             this.movies = movie['results'];
-            console.log(this.movies)
-                for (let i = 0; i < this.movies.length; i++) {
-                    this.images.push({source: `http://image.tmdb.org/t/p/w500
-          ${this.movies[i].poster_path}`, alt: `${this.movies[i].original_title}` , title: `${this.movies[i].title}`});
-                }
             },
             (error) => console.log(error)
         );
-        this.router.navigate(['/mylist', {queryParams: {test: 'Bonjour'}}]).then(nav => console.log('navigation : ', nav));
-           //  this.name = this.route.snapshot.params['id'];
+    }
+    selectedReceiver(event) {
+        console.log('JE suis là !!! : ', event.value)
+        this.click = true
     }
 
     formatLabel(value: number | null) {
